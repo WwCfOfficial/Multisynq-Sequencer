@@ -135,6 +135,19 @@ sudo systemctl enable synchronizer-cli synchronizer-cli-web
 sudo systemctl start synchronizer-cli synchronizer-cli-web
 ```
 
+Also allow dashboard ports if not already allowed
+
+```bash
+sudo ufw allow 3000/tcp
+sudo ufw allow 3001/tcp
+```
+
+Check UFW status and allowed ports:
+
+```bash
+sudo ufw status
+```
+
 ---
 
 ## 📊 Monitor via Web Dashboard
